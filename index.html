@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        AOS.init();
+    </script>
+
+    <div id="navbar" class="navbar">
+        <a href="#info">Home</a>
+        <a href="#footer">Contato</a>
+        <a href="#projects">Projetos</a>
+        <a href="#habilities">Habilidades</a>
+        <a href="#about-me">Sobre mim</a>
+        <a class="icon" onclick="toggleFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="landing">
+        <div id="info" data-aos="fade-up">
+            <p id="title">Oi, sou Kevin Willians</p>
+            <p id="angular">ANGULAR</p>
+            <p id="developer">DEVELOPER</p>
+
+        </div>
+        <div class="img">
+            <img src="/assets/img/monitor.jpg" alt="">
+        </div>
+    </div>
+    
+
+
+
+    <div class="section">
+        <div id="about-me" >
+            <h1 class="title">Sobre mim</h1>
+            <p class="text1">Sou um estudante de Programação web, tenho estudado para ser desenvolvedor Front-End,
+                usando o framework Angular.Js para me inserir na área. Possuindo conhecimento em JavaScript e TypeScript
+            </p>
+            <p class="text2">Onde aprendi a maior parte do meu conhecimento online, criando pequenos projetos e
+                resolvendo problemas dos
+                mesmos. Mas meu ínicio no mundo da programção foi com curso técnico de informática para internt em uma
+                instituição em minha cidade onde aprendi a base para ter este conhecimento atual.</p>
+           
+        </div>
+        <div id="habilities">
+            <h1>Tecnologias</h1>
+            <div class="topics">
+                <div class="hab">
+                    <img src="../assets/img/HTML.png" alt="">
+                    <h2>HTML</h2>
+                    <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem
+                        ser
+                        interpretados por navegadores.</p>
+                </div>
+                <div class="hab">
+                    <img src="../../assets/img/css.png" alt="">
+                    <h2>CSS</h2>
+                    <p>Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado
+                        diretamente
+                        nas tags HTML ou ficar contido dentro das tags &lt;style&gt; Também é possível, adicionar
+                        estilos
+                        adicionando um link para um arquivo CSS que contém os estilos.</p>
+                </div>
+                <div class="hab">
+                    <img src="../../assets/img/javascript.png" alt="">
+                    <h2>JavaScript</h2>
+                    <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com
+                        tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três
+                        principais tecnologias da World Wide Web.</p>
+                </div>
+                <div class="hab">
+                    <img src="../../assets/img/angular.png" alt="">
+                    <h2>Angular</h2>
+                    <p>Angular é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em
+                        TypeScript
+                        liderado pela Equipe Angular do Google e por uma comunidade de indivíduos e corporações.</p>
+                </div>
+                <div class="hab">
+                    <img src="../../assets/img/typescript.png" alt="">
+                    <h2>TypeScript</h2>
+                    <p>TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um
+                        superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="projects" >
+            <h1>Projetos</h1>
+            <div class="projetos">
+
+                <div class="popup">
+                    <div class="popupcontent" id="myPopup" >
+                        <video src="/assets/videos/Shadow-search- API LOL.mp4" controls></video>
+                        
+                        <i class="fa fa-close"  id="close" style="font-size:36px" onclick="myFunction()"></i>
+                        </div>
+                        <div class="popupcontent1" id="myPopup1">
+                            <video src="/assets/videos/Pokedex-API.mp4" controls></video>
+                        
+                            <i class="fa fa-close"  id="close" style="font-size:36px" onclick="myFunction2()"></i>
+                        </div>
+                </div>
+
+                <div class="btns">
+                    <div class="api-league">
+                        <img src="/assets/img/api-league.png" alt="">
+                        <button class="Btn-pop" onclick="myFunction()">Video Projeto</button>
+                        <a href="https://github.com/keviwsilva/API-leagueoflegends" target="_blank">GitHub link</a>
+                    </div>
+                    <div class="pokedex">
+                        <img src="/assets/img/pokedex.png" alt="">
+                        <button class="Btn-pop" onclick="myFunction2()">Video Projeto</button>
+                        <a href="https://github.com/keviwsilva/Pokedex" target="_blank">GitHub link</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <h1>Contatos</h1>
+        <div class="conteudo">
+            <div class="contatos">
+                <a href="https://github.com/keviwsilva" target="_blank">
+                    <img src="../../assets/img/github.png" alt="">
+                    <p>GitHub</p>
+                </a>
+                <a href="https://www.linkedin.com/in/kevin-willians-monteiro-silva-0b096622b/" target="_blank">
+                    <img src="../../assets/img/linkedin.png" alt="">
+                    <p>LinkedIn</p>
+                </a>
+                <a href="https://whatsa.me/5512991840288/?t=Oi,%20Kevin%20eu%20sou%20------!" target="_blank">
+                    <img src="../../assets/img/zap.png" alt="">
+                    <p>WhatsApp</p>
+                </a>
+                <a href="">
+                    <img src="" alt="">
+                </a>
+            </div>
+            <div class="info">
+                <div class="fone">
+                    <h2>Telefone para contato</h2>
+                    <p>(12) 99184 0288</p>
+                </div>
+                <div class="email">
+                    <h2>Email para contato</h2>
+                    <p>kwms1345@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function toggleFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { scrollFunction() };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function scrollFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        function myFunction() {
+             var popup = document.getElementById("myPopup");
+                 popup.classList.toggle("show");
+        }
+
+        function myFunction2() {
+             var popup = document.getElementById("myPopup1");
+                 popup.classList.toggle("show");
+        }
+
+    </script>
+</body>
+
+</html>
