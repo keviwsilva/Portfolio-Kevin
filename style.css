@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
+  width: 1fr;
 }
 
 ::-webkit-scrollbar {
@@ -33,6 +34,7 @@ body {
   background-color: #ffffff;
   z-index: 100;
   box-shadow: 0px 4px 10px #6969697e;
+  width: 1fr;
 }
 
 #navbar a {
@@ -82,7 +84,7 @@ body {
 
 .landing {
   top: 100px;
-  width: 100%;
+  width: 100vh;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -104,6 +106,7 @@ body {
 }
 
 #info #angular {
+  /* width: 100vw; */
   font-size: 100px;
   text-shadow: 2px 5px 10px #202020;
 }
@@ -231,7 +234,7 @@ body {
 
 .popup .popupcontent {
   display: none;
-  width: 1100px;
+  width: 100vh;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -552,17 +555,30 @@ footer h1 {
 }
 
 @media screen and (min-width: 350px) and (max-width: 500px) {
-  #info {
-    width: 90%;
+  .landing {
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
   }
+  #info #angular{
+    font-size: 40px;
+  }
+  #info #developer{
+    font-size: 40px;
+  }
+  
+.landing .img img{
+  width: 200px;
+}
+  
   #about-me {
-    height: 90vh;
+    height: 117vh;
   }
   #about-me p {
     width: 90%;
   }
   #projects {
-    top: 55vh;
+    top: 112vh;
     height: 100vh;
   }
   #habilities {
@@ -577,9 +593,22 @@ footer h1 {
 }
 
 @media screen and (max-width: 350px) {
-  #info {
-    width: 90%;
+  .landing {
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
   }
+  #info #angular{
+    font-size: 40px;
+  }
+  #info #developer{
+    font-size: 40px;
+  }
+  
+.landing .img img{
+  width: 200px;
+}
+  
   #about-me {
     height: 140vh;
   }
@@ -621,11 +650,30 @@ footer h1 {
   }
   #footer {
     bottom: -160vh;
-    height: 80vh;
+    height: 95vh;
   }
   #footer .info {
     /* margin-left: 10px; */
     display: flex;
     flex-direction: column;
+  }
+  .popup .popupcontent {
+    width: 50vh;
+    left: 0;
+    transform: translate(0%);
+  }
+
+  .popup .popupcontent video{
+    width: 100%;
+  }
+  .popup .popupcontent1 {
+    width: 50vh;
+    left: 0;
+    bottom: -400px;
+    transform: translate(0%);
+  }
+
+  .popup .popupcontent1 video{
+    width: 100%;
   }
 }
