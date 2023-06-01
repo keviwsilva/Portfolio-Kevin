@@ -84,7 +84,7 @@ body {
 
 .landing {
   top: 100px;
-  width: 100vh;
+  width: 1fr;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +106,7 @@ body {
 }
 
 #info #angular {
-  /* width: 100vw; */
+  width: 100vh;
   font-size: 100px;
   text-shadow: 2px 5px 10px #202020;
 }
@@ -120,7 +120,7 @@ body {
 .landing .img {
   flex-basis: 40px;
   position: relative;
-  width: 50%;
+  width: 30%;
 }
 
 .landing .img img {
@@ -500,13 +500,22 @@ footer h1 {
 }
 
 @media screen and (min-width: 600px) and (max-width: 860px) {
-  .landing{
-    left: -100px;
+  
+  .landing {
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
   }
-  #info {
-    margin-left: 0;
-    width: 60%;
+  #info #angular{
+    font-size: 50px;
   }
+  #info #developer{
+    font-size: 50px;
+  }
+  
+.landing .img img{
+  width: 300px;
+}
   #about-me {
     height: 70vh;
   }
@@ -529,6 +538,8 @@ footer h1 {
 @media screen and (min-width: 500px) and (max-width: 600px) {
   .landing{
     left: -100px;
+    display: flex;
+    flex-direction: column;
   }
   #info {
     width: 60%;
@@ -593,10 +604,11 @@ footer h1 {
 }
 
 @media screen and (max-width: 350px) {
+  
   .landing {
     display: flex;
     flex-direction: column;
-    width: 40vh;
+    width: 70vh;
   }
   #info #angular{
     font-size: 40px;
@@ -634,12 +646,50 @@ footer h1 {
   #footer {
     bottom: -140vh;
   }
+  .popup .popupcontent {
+    width: 50vh;
+    left: 0;
+    transform: translate(0%);
+  }
+
+  .popup .popupcontent video{
+    width: 100%;
+  }
+  .popup .popupcontent1 {
+    width: 50vh;
+    left: 0;
+    bottom: -400px;
+    transform: translate(0%);
+  }
+
+  .popup .popupcontent1 video{
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 600px) {
   #footer {
     bottom: -160vh;
     height: 60vh;
+  }
+  .popup .popupcontent {
+    width: 50vh;
+    left: 0;
+    transform: translate(0%);
+  }
+
+  .popup .popupcontent video{
+    width: 100%;
+  }
+  .popup .popupcontent1 {
+    width: 50vh;
+    left: 0;
+    bottom: -400px;
+    transform: translate(0%);
+  }
+
+  .popup .popupcontent1 video{
+    width: 100%;
   }
 }
 
