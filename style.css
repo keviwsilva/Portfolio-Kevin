@@ -243,7 +243,7 @@ body {
   position: absolute;
   z-index: 1;
   left: 50%;
-  transform: translate(30%);
+  transform: translate(40%);
 }
 
 .popup .popupcontent video {
@@ -300,6 +300,42 @@ body {
   border-color: #555 transparent transparent transparent;
 }
 
+
+.popup .popupcontent2 {
+  display: none;
+  width: 1100px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(30%);
+}
+
+.popup .popupcontent2 video {
+  width: 80%;
+}
+.popup .popupcontent2 #close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.popup .popupcontent2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+
 .popup .show {
   display: block;
   -webkit-animation: fadeIn 1s;
@@ -324,47 +360,125 @@ body {
   }
 }
 
-.btns {
-  margin-left: 10%;
-  display: flex;
-  flex-wrap: wrap;
-  place-content: space-evenly;
-  text-align: center;
-  align-items: center;
-  width: 80%;
+
+.btns ul{
+  margin-left: auto;
+  display: block;
+  width: 100%;
+
   overflow: hidden;
   z-index: 1;
-  height: 50%;
+  height: 80%;
+}
+
+.btns ul li{
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.btns ul input {
+  display: none;
+  visibility: hidden;
 }
 
 .api-league,
-.pokedex {
-  flex: 0 0 40%;
+.pokedex, .conta {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
   margin-left: 20px;
+  z-index: 0;
 }
 
+  .btns ul li img {
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.btns ul li a {
+  margin-top: 20px;
+  opacity: 0;
+  visibility: hidden;
+} 
+.btns ul li button {
+  
+  margin-top: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
 .pokedex img {
+  width: 80%;
+  /* height: auto; */
+  cursor: pointer;
+  border-radius: 10px;
+  height: 35%;
+}
+.api-league img {
   width: 100%;
-  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 35%;
+}
+.conta img {
+  width: 100%;
+  /* height: auto; */
   cursor: pointer;
   border-radius: 10px;
   height: 35%;
 }
 
-.api-league img {
-  width: 100%;
-  height: auto;
+
+.btns ul li input:checked~img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+.btns ul li input:checked~a {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+.btns ul li input:checked~button {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+     
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
   cursor: pointer;
-  border-radius: 10px;
-  height: 32%;
+  background-color: #0000002f;
+  height: 60px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 5px #000000;
+}
+.arrow:hover{
+  background-color: #181818;
+}
+
+.arrow-prev {
+  left: 10px;
+}
+
+.arrow-next {
+  right: 10px;
 }
 
 .btns button {
-  margin-top: 15px;
+  
   height: 30px;
   width: 300px;
   border-radius: 10px;

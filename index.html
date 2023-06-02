@@ -39,12 +39,12 @@
             <img src="assets/img/monitor.jpg" alt="">
         </div>
     </div>
-    
+
 
 
 
     <div class="section">
-        <div id="about-me" >
+        <div id="about-me">
             <h1 class="title">Sobre mim</h1>
             <p class="text1">Sou um estudante de Programação web, tenho estudado para ser desenvolvedor Front-End,
                 usando o framework Angular.Js para me inserir na área. Possuindo conhecimento em JavaScript e TypeScript
@@ -53,7 +53,7 @@
                 resolvendo problemas dos
                 mesmos. Mas meu ínicio no mundo da programção foi com curso técnico de informática para internt em uma
                 instituição em minha cidade onde aprendi a base para ter este conhecimento atual.</p>
-           
+
         </div>
         <div id="habilities">
             <h1>Tecnologias</h1>
@@ -97,36 +97,52 @@
                 </div>
             </div>
         </div>
-        <div id="projects" >
+        <div id="projects">
             <h1>Projetos</h1>
             <div class="projetos">
 
                 <div class="popup">
-                    <div class="popupcontent" id="myPopup" >
+                    <div class="popupcontent" id="myPopup">
                         <video src="assets/videos/Shadow-search- API LOL.mp4" controls></video>
-                        
-                        <i class="fa fa-close"  id="close" style="font-size:36px" onclick="myFunction()"></i>
-                        </div>
-                        <div class="popupcontent1" id="myPopup1">
-                            <video src="assets/videos/Pokedex-API.mp4" controls></video>
-                        
-                            <i class="fa fa-close"  id="close" style="font-size:36px" onclick="myFunction2()"></i>
-                        </div>
+
+                        <i class="fa fa-close" id="close" style="font-size:36px" onclick="myFunction()"></i>
+                    </div>
+                    <div class="popupcontent1" id="myPopup1">
+                        <video src="assets/videos/Pokedex-API.mp4" controls></video>
+
+                        <i class="fa fa-close" id="close" style="font-size:36px" onclick="myFunction2()"></i>
+                    </div>
+                    <div class="popupcontent2" id="myPopup2">
+                        <video src="assets/videos/Contas_Trim.mp4" controls></video>
+
+                        <i class="fa fa-close" id="close" style="font-size:36px" onclick="myFunction3()"></i>
+                    </div>
                 </div>
 
                 <div class="btns">
-                    <div class="api-league">
+                    <ul>
+                    <li class="api-league">
+                         <input type="radio" id="slide1" name="slide" checked>
                         <img src="assets/img/api-league.png" alt="">
                         <button class="Btn-pop" onclick="myFunction()">Video Projeto</button>
                         <a href="https://github.com/keviwsilva/API-leagueoflegends" target="_blank">GitHub link</a>
-                    </div>
-                    <div class="pokedex">
+                    </li>
+                    <li class="pokedex">
+                         <input type="radio" id="slide2" name="slide">
                         <img src="assets/img/pokedex.png" alt="">
                         <button class="Btn-pop" onclick="myFunction2()">Video Projeto</button>
                         <a href="https://github.com/keviwsilva/Pokedex" target="_blank">GitHub link</a>
-                    </div>
+                    </li>
+                    <li class="conta">
+                        <input type="radio" id="slide3" name="slide">
+                       <img src="assets/img/contas.png" alt="">
+                       <button class="Btn-pop" onclick="myFunction3()">Video Projeto</button>
+                       <a href="https://github.com/keviwsilva/Gerenciamento-de-contas" target="_blank">GitHub link</a>
+                   </li>
+                    </ul>
                 </div>
-
+                <button class="arrow arrow-prev">&#10094;</i></button>
+                <button class="arrow arrow-next">&#10095;</i></button>
 
             </div>
 
@@ -138,11 +154,11 @@
         <h1>Contatos</h1>
         <div class="conteudo">
             <div class="contatos">
-                <a href="https://github.com/keviwsilva" target="_blank">
+                    <a href="https://github.com/keviwsilva" target="_blank">
                     <img src="assets/img/github.png" alt="">
                     <p>GitHub</p>
                 </a>
-                <a href="https://www.linkedin.com/in/kevin-willians-monteiro-silva-0b096622b/" target="_blank">
+                    <a href="https://www.linkedin.com/in/kevin-willians-monteiro-silva-0b096622b/" target="_blank">
                     <img src="assets/img/linkedin.png" alt="">
                     <p>LinkedIn</p>
                 </a>
@@ -195,15 +211,47 @@
             }
         }
 
+        const slideContainer = document.querySelector('.btns');
+const prevButton = document.querySelector('.arrow-prev');
+const nextButton = document.querySelector('.arrow-next');
+
+prevButton.addEventListener('click', () => {
+  const currentSlide = slideContainer.querySelector('input[type="radio"]:checked');
+  const prevSlide = currentSlide.parentNode.previousElementSibling;
+  
+  if (prevSlide) {
+    prevSlide.querySelector('input[type="radio"]').checked = true;
+  } else {
+    slideContainer.lastElementChild.querySelector('input[type="radio"]').checked = true;
+  }
+});
+
+nextButton.addEventListener('click', () => {
+  const currentSlide = slideContainer.querySelector('input[type="radio"]:checked');
+  const nextSlide = currentSlide.parentNode.nextElementSibling;
+  
+  if (nextSlide) {
+    nextSlide.querySelector('input[type="radio"]').checked = true;
+  } else {
+    slideContainer.firstElementChild.querySelector('input[type="radio"]').checked = true;
+  }
+});
+
+
         function myFunction() {
-             var popup = document.getElementById("myPopup");
-                 popup.classList.toggle("show");
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
         }
 
         function myFunction2() {
-             var popup = document.getElementById("myPopup1");
-                 popup.classList.toggle("show");
+            var popup = document.getElementById("myPopup1");
+            popup.classList.toggle("show");
         }
+        function myFunction3() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show");
+        }
+
 
     </script>
 </body>
