@@ -393,22 +393,57 @@ body {
 }
 
   .btns ul li img {
-    margin: auto;
+    position:relative;
+    /* margin: auto; */
     opacity: 0;
     visibility: hidden;
 }
 
+.btns ul li img:hover{
+  cursor: pointer;
+}
+
 .btns ul li a {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   opacity: 0;
   visibility: hidden;
+  /* position: relative; */
 } 
 .btns ul li button {
   
-  margin-top: 20px;
+  /* margin-top: 20px; */
   opacity: 0;
   visibility: hidden;
+  /* position: relative; */
 }
+.btns ul .api-league button {
+  position: absolute;
+  top: 104%;
+}
+.btns ul .api-league a{
+  position: absolute;
+  top: 110%;
+}
+
+.btns ul .pokedex button {
+  position: absolute;
+  top: 113%;
+}
+
+
+.btns ul .pokedex a{
+  position: absolute;
+  top: 118%;
+}
+.btns ul .conta button {
+  position: absolute;
+  top: 104%;
+}
+.btns ul .conta a{
+  position: absolute;
+  top: 110%;
+}
+
 
 
 .pokedex img {
