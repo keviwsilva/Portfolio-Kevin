@@ -354,7 +354,7 @@ section #landing {
   position: absolute;
   bottom: 2px;
   height: 7%;
-  background-color: #21059c;
+  background:  linear-gradient(90.21deg, #852a60 -5.91%, #36228b 111.58%);
   color: #fff;
   text-decoration: none;
   text-align: center;
