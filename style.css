@@ -106,25 +106,24 @@ section #landing {
   /* width: 600px; */
   font-size: 25px;
 }
-
-#landing #text h1 {
+ #text h1 {
   width: 600px;
   font-size: 45px;
 }
 
-#landing #text #about{
+#text #about{
   width: 500px;
   font-size: 20px;
 }
 
-#landing #img {
+#img {
   /* background-color: #ffffff; */
   grid-area: 1/2/2/3;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#landing #img img {
+ #img img {
   width: 550px;
   animation: updown 3s linear infinite;
 }
@@ -188,8 +187,7 @@ section #landing {
   margin-left: 50px;
   margin-right: 50px;
 }
-
-.carousel #skills .skill {
+#skills .skill {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
