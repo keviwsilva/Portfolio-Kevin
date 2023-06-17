@@ -259,13 +259,12 @@ section #landing {
   justify-content: center;
   margin: auto;
 }
-
-.projects .topics .project {
+.topics .project {
   text-align: center;
   margin: 20px;
 }
 
-.projects .topics .project img {
+.topics .project img {
   width: 500px;
   height: 300px;
   object-fit: fill;
@@ -274,7 +273,7 @@ section #landing {
 }
 
 
-.projects .topics .project img:hover{
+.project img:hover{
   cursor: pointer;
   transform: scale(1.05);
   filter: brightness(70%);
