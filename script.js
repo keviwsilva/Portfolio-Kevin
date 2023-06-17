@@ -1,5 +1,5 @@
 
-  AOS.init();
+//   AOS.init();
 
 function toggleFunction() {
     var x = document.getElementById("navbar");
